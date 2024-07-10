@@ -32,7 +32,7 @@ public class EmployeeService {
     }
 
     public Employee updateEmployee(Employee employee) {
-        employeeRepository.save(employee);
+        return employeeRepository.save(employee);
     }
 
     public void deleteEmployeeById(Long id) {
